@@ -23,13 +23,12 @@
       padding:28px;
     }
     .container{
-      width:100%;
-      max-width:980px;
-      display:flex;
-      gap:32px;
-      align-items:flex-start;
-      justify-content:space-between;
+      
+      display: grid;
+      place-items: center;    /* ata dile   align- center  ar justify- center  deya  duitari kaj ak sathe kore dibe */
+      height: 100vh;      /* ar ata holo jekhanei view koro na keno tar screen ta same vabe dekhave  upore ar neche */
     }
+    
 
     /* Left marketing column */
     .left {
@@ -43,7 +42,7 @@
       font-size:64px;
       line-height:1;
       letter-spacing:1px;
-      margin-bottom:8px;
+      margin-left:25px;
     }
     .tag {
       font-size:28px;
@@ -211,8 +210,8 @@
 
             <button type="submit" class="btn-login">Log in</button>
 
-            <div class="links">
-              <a" href="#" onclick="return false; ">Forgotten password?</a>
+            <div style="text-align: center;">
+              <a" href="facebook.com"  ">Forgotten password?</a>
               
             </div>
 
